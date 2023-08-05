@@ -1,0 +1,390 @@
+* {
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    transition: all 0.5s ease;
+}
+
+.sec-2 {
+    margin-top: 120px;
+    font-size: 38px !important;
+    text-align: center;
+    font-size: 30px;
+    color: #353535;
+    line-height: 70px;
+
+}
+
+.logo {
+    height: 48px;
+}
+
+#container {
+    margin: 0 auto;
+
+}
+
+
+
+.toggle,
+.togglei,
+[id^=drop] {
+    display: none;
+    font-size: 14px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.514);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    margin: 0;
+    width: 100%;
+    align-items: center;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    display: block;
+    padding: 0 30px;
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+nav:after {
+    content: "";
+    display: none;
+    clear: both;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li {
+    margin: 0px;
+    display: inline-block;
+    float: left;
+
+}
+
+nav a {
+    display: flex;
+    padding: 0 20px;
+    color: #272727;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav ul ul a {
+    background-color: #FF5F2E;
+}
+
+nav ul li ul li .toggle,
+nav ul ul a {
+    background-color: #f0f0f0;
+}
+
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+nav ul li:hover>ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 170px;
+}
+
+li>a:after {
+    content: '';
+}
+
+li>a:only-child:after {
+    content: '';
+}
+
+.chev {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+
+}
+
+.chev svg {
+    background-color: transparent;
+    margin-left: 8px;
+    color: #353535;
+}
+
+.card-grid {
+    margin-top: 60px;
+    display: flex;
+    margin: 60px auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+    }
+.card{
+    background: rgb(255, 255, 255);
+    width : 280px;
+    height : 280px;
+    border-radius: 8px;
+    margin-top: 25px;
+    overflow: hidden;
+    background: rgba( 229, 229, 229, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 5.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    cursor: pointer;
+}
+
+.card:hover{
+    scale: 1.05;
+}
+.img-container:hover{
+    transform: scale(1.05);
+}
+.img-container{
+    background-color: yellow;
+    width : 100%;
+    height: 60%;
+}
+.card-content{
+    
+    display: flex;
+    height: 30%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    gap: 8px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.description{
+    margin: 0px 170px;
+    line-height: 175%;
+    text-align: center;
+    font-size: 18;
+    color: #3f3f3f;
+    font-weight: 300;
+    line-height: 175%;
+}
+.card-title, h4{
+    color: #d81010;
+    font-size: 16px ;
+    font-weight: 600;
+}
+.card-description, p {
+    text-align: left;
+    font-size: 14px ;
+    width: 98%;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+
+@media all and (max-width : 660px) {
+
+    .card{
+        background: rgb(255, 255, 255);
+        width : 340px;
+        height : 280px;
+        margin-top: 25px;
+        border-radius: 8px;
+        overflow: hidden;
+        background: rgba( 229, 229, 229, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 5.5px );
+        -webkit-backdrop-filter: blur( 5.5px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+    }
+
+
+    .mediaq {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: inherit;
+    }
+
+    .logo {
+        display: block;
+        padding: 0 30px;
+        float: left;
+        line-height: 60px;
+
+    }
+    .description{
+        margin: 0px 50px;
+        line-height: 175%;
+        text-align: center;
+        font-size: 18;
+        color: #3f3f3f;
+        font-weight: 300;
+        line-height: 175%;
+    }
+
+
+    nav {
+        margin: 0;
+        width: 100%;
+        padding-right: 16px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 3.5px );
+        -webkit-backdrop-filter: blur( 2.5px );
+
+    }
+
+    .toggle+a,
+    .menu {
+        width: 100%;
+        display: none;
+    }
+
+    .chev {
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+    }
+
+    .chev svg {
+        background-color: transparent;
+        margin-left: 8px;
+    }
+
+    .togglei {
+        display: block;
+        background-color: #00000000;
+        padding: 0 20px;
+        color: #272727;
+        font-size: 30px;
+        cursor: pointer;
+        font-weight: medium;
+        line-height: 60px;
+        text-decoration: none;
+
+        border: none;
+    }
+
+    .toggle {
+        display: flex;
+        background-color: #25444100;
+        padding: 0 20px;
+        color: #FF5F2E;
+        font-size: 16px;
+        font-weight: medium;
+        line-height: 60px;
+        text-decoration: none;
+        width: 100%;
+        border: none;
+    }
+
+    .toggle:hover {
+        background-color: #000000;
+    }
+
+    [id^=drop]:checked+ul {
+        display: block;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+        margin: 0 auto;
+
+    }
+
+    nav ul ul ul a {
+        padding: 0 80px;
+        margin: 0 auto;
+    }
+
+
+    nav a:hover,
+    nav ul ul a {
+        background-color: #FF5F2E;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #21212100;
+    }
+
+
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+    }
+
+
+
+    nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul ul ul li {
+        position: static;
+
+    }
+}
+
+@media all and (max-width : 330px) {
+
+    nav ul li {
+        display: flex;
+        width: 100%;
+    }
+
+}
